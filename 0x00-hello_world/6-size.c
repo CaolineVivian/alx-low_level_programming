@@ -1,17 +1,18 @@
-#!/bin/bash
 # include <stdio.h>
 
-int main (void)
+/**
+ * main - starts the code
+ * Description: print the sizes
+ * Return: 0
+ */
+
+int main(void)
 {
-	char a;
-	int b;
-	float j;
+	printf("Size of a char: %d byte(s)\n", (int)sizeof(char));
+	printf("Size of an int: %d byte(s)\n", (int)sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", (int)sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", (int)sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", (int)sizeof(float));
 
-	printf("Size of a char: byte(s)\n");
-	printf("Size of an int: byte(s)\n");
-	printf("Size of a long int: byte(s)\n");
-	printf("Size of alon long int: byte(s)\n");
-	printf("Size of a float: byte(s)\n");
-
-	return(0);
+	return (0);
 }
