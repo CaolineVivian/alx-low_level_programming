@@ -9,9 +9,9 @@ int main(void)
 	/*declare string variable*/
 	char var;
 	/*code that prints the alphabet*/
-	for (var = 'A'; var <= 'Z'; var++)
+	for (var = 'a'; var <= 'a'; var++)
 	{
-		putchar(tolower(var));
+		putchar(var);
 		putchar("\n");
 	}
 	return (0);
