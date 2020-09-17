@@ -8,8 +8,6 @@ int main(void)
 {
 	/*declare string variable*/
 	char var;
-	/*newline*/
-	putchar('\n');
 	/*code that prints the alphabet*/
 	for (var = 'a'; var <= 'z'; var++)
 	{
