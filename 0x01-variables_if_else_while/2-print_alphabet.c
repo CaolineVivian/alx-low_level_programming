@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	/*declare string variable*/
-	char var;
-	/*code that prints the alphabet*/
-	for (var = 'a'; var <= 'z'; var++)
+	char ch = 'a';
+
+	while (ch <= 'z')
 	{
-		putchar(var);
-		putchar('\n');
+		putchar(ch);
+		ch++;
 	}
+	putchar('\n');
 	return (0);
 }
