@@ -10,21 +10,25 @@ int main(void)
 {
 	/*integer value*/
 	int n;
+	int last_digit;
 	/*random number function*/
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	/*last digit of n*/
+	last_digit = n % 10;
+	printf("Last digit of %i is %i and is ", n, last_digit);
 	/*if statement*/
-	if (n > 5)
+	if (last_digit > 5)
 	{
-		printf("Last digit of %d is and is greater than 5\n", n);
+		printf("greater than 5\n");
 	}
 	else if (n == 0)
 	{
-		printf("Last digit of %d is and is 0\n", n);
+		printf("0\n");
 	}
-	else if (n < 6 && n != 0)
+	else
 	{
-		printf("Last digit of %d is and is less than 6 and not 0\n", n);
+		printf("less than 6 and not 0\n");
 	}
 	return (0);
 
