@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  * main - code execution
- * Description: last digit on m
- * Return
+ * Description: prints whether iast digit on n is positive or negative
+ * Return: 0
  */
 int main(void)
 {
