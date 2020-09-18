@@ -6,18 +6,17 @@
  */
 int main(void)
 {
-	int j = 48;
-	int k = 'a';
+	int i;
 
-	while (j <= 58)
+	for  (i = 48; i < 58; i++)
 	{
-		putchar(j);
-		j++;
+		putchar(i);
+		i++;
 	}
-	while (k <= 'f')
+	for  (i = 'a'; i <= 'f'; i++)
 	{
-		putchar(k);
-		k++;
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
