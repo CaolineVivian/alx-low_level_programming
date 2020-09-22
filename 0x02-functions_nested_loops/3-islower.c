@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * int _islower - check whether lower or not
+ * _islower - returns 1 lower or 0 otherwise
  * @c: integer to be tested
  *
  * Return: 1 or 0 
