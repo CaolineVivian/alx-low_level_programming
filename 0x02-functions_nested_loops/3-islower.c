@@ -1,9 +1,8 @@
 #include "holberton.h"
 /**
- * main - code execution
+ * int _islower - check whether lower or not
  * @c: The character to print
  *
- * Description: check whether lower or not
  * Return: 1 when its lower and 0 otherwise
  */
 int _islower(int c)
