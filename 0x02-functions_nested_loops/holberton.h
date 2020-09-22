@@ -11,13 +11,13 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 
 /* 3-islower.c */
-int _islower(int);
+int _islower(int c);
 
 /* 4-alpha.c */
 int _isalpha(int);
 
 /* 5-sign.c */
-int print_sign(int);
+int print_sign(int n);
 
 /* 6-abs.c */
 int _abs(int);
@@ -33,6 +33,9 @@ void time_table(void);
 
 /* 10- add.c */
 int add(int, int);
+/*
+ 11-print_to_98.c
+void print_to_98(int)
+*/
 
-/* 11-print_to_98.c */
-void print_to_98(int n)
+#endif /* HOLBERTON_H */
