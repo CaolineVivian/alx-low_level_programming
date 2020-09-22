@@ -2,10 +2,9 @@
 #define HOLBERTON_H
 
 #include <stdio.h>
-/*
-   0-main.c
+
+/*  0-main.c */
 void positive_or_nagative(int i);
-*/
 
 /* 2-largest_number.c */
 int largest_number(int a, int b, int c);
