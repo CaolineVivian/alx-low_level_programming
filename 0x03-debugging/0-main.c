@@ -1,6 +1,8 @@
 #include "holberton.h"
+
 /**
- * main - tests function that print if integer is positive or ngative
+ * main - program tests function that print whether
+ * integer is positive or ngative
  * Return: 0
  */
 int main(void)
