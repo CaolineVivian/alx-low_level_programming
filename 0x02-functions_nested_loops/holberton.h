@@ -21,3 +21,18 @@ int print_sign(int);
 
 /* 6-abs.c */
 int _abs(int);
+
+/* 7-print_last_digit.c */
+int print_last_digit(int);
+
+/* 8-24_hours.c */
+void jack_bauer(void);
+
+/* 9-time_table.c */
+void time_table(void);
+
+/* 10- add.c */
+int add(int, int);
+
+/* 11-print_to_98.c */
+void print_to_98(int n)
