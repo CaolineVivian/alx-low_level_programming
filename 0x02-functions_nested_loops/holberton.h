@@ -29,13 +29,12 @@ int print_last_digit(int);
 void jack_bauer(void);
 
 /* 9-time_table.c */
-void time_table(void);
+void times_table(void);
 
 /* 10- add.c */
 int add(int, int);
-/*
- 11-print_to_98.c
+
+/* 11-print_to_98.c */
 void print_to_98(int)
-*/
 
 #endif /* HOLBERTON_H */
