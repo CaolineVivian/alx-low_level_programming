@@ -4,10 +4,10 @@
  */
 void more_numbers(void)
 {
+	int i = 48;
 	int c;
 
-	c = 0;
-	while (c < 10)
+	while (i < 58)
 	{
 		c = 48;
 		while (c < 58)
@@ -15,12 +15,14 @@ void more_numbers(void)
 			_putchar(c);
 			c++;
 		}
+
 		c = 16;
 		while (c < 21)
 		{
 			_putchar(c);
+			c++;
 		}
 		_putchar('\n');
-		c++;
+		i++;
 	}
 }
