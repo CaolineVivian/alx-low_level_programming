@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * _isupper - checks for uppercase character
  * @c: integer to be checked
@@ -7,19 +8,5 @@
  */
 int _isupper(int c)
 {
-	int ch = 65;
-
-	while (ch <= 90)
-	{
-		if (c == ch)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-		ch++;
-	}
-	return (0);
+	return (c >= 65 && c <= 90);
 }
