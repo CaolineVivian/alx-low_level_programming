@@ -9,7 +9,7 @@ int _isdigit(int c)
 {
 	int ch = 48;
 
-	while (ch <= 58)
+	while (ch < 58)
 	{
 		if (ch == c)
 		{
