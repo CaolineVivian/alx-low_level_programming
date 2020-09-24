@@ -8,19 +8,5 @@
  */
 int _isdigit(int c)
 {
-	int ch = 48;
-
-	while (ch < 58)
-	{
-		if (ch == c)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-		ch++;
-	}
-	return (0);
+	return (c >= 48 && c < 58);
 }
