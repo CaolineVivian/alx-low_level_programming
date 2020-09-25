@@ -1,59 +1,33 @@
 #include <stdio.h>
-
 /**
- * print_buzz - fuction that prints the word Buzz when called
- */
-void print_buzz(void)
-{
-	putchar('B');
-	putchar('u');
-	putchar('z');
-	putchar('z');
-}
-/**
- * print_fizz - function that prints the word Fizz when called
- */
-void print_fizz(void)
-{
-	putchar('F');
-	putchar('i');
-	putchar('z');
-	putchar('z');
-}
-/**
- * print_fizz_buzz - prints the  words fizzbuzz
- */
-void print_fizz_buzz(void)
-{
-	print_fizz();
-	putchar(' ');
-	print_buzz();
-}
-
-/**
- * main - prints numbers 1 to 100, newline
- * for multiple of three print Fizz and of five Buzz
+ * main - prints fizz, buzz, fizzbuzz
  *
  * Return: 0
  */
 int main(void)
 {
-	int i;
+	int a;
 
-	for (i = 1; i <= 99; i++)
+	for (a = 1; a <= 100; a++)
 	{
-		if (i % 15 == 0)
-			print_fizz_buzz();
-		else if (i % 3 == 0)
-			print_fizz();
-		else if (i % 5 == 0)
-			print_buzz();
-		else
-			printf("%i", i);
-		putchar(' ');
-	}
+		if ((a % 3) == 0 && (a % 5) == 0)
+		{
+			printf("FizzBuzz ");
+		}
+		else if ((a % 3) == 0)
+		{
+			printf("Fizz ");
 
-	print_buzz();
+		}
+		else if ((a % 5) == 0)
+		{
+			printf("Buzz ");
+		}
+		else
+		{
+			printf("%d ", a);
+		}
+	}
 	putchar('\n');
 	return (0);
 }
