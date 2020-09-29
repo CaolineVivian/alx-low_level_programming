@@ -9,10 +9,11 @@ void print_rev(char *s)
 {
 	int forward, reverse;
 
-	for (forward = 0; s[forward] != '\0'; forward++)
+	for  (forward = 0; s[forward] != '\0'; forward++)
 	{
 	}
-	for (reverse = forward - 1; s[reverse] >= 0; reverse--)
+
+	for (reverse = forward - 1; reverse >= s[forward]; reverse--)
 	{
 		_putchar(s[reverse]);
 	}
