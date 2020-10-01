@@ -2,7 +2,7 @@
 
 /**
  * leet - encodes a string into 1337
- * @str: string v
+ * @str: string variable
  * Return: str
  */
 char *leet(char *str)
@@ -15,7 +15,7 @@ char *leet(char *str)
 
 	for  (a = 0; str[a] != '\0'; a++)
 	{
-		for (b = 0; lower[b] != '\0' && upper[b] '\0'; b++)
+		for (b = 0; lower[b] != '\0' && upper[b] != '\0'; b++)
 		{
 			if (str[a] == lower[b] || str[a] == upper[b])
 			{
