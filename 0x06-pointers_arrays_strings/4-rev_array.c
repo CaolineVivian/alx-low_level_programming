@@ -4,20 +4,26 @@
  * reverse_array - reverse the contents of an array
  * @a: pointer to array
  * @n: number of elements in the array
- *
+ * Return: void
  */
 void reverse_array(int *a, int n)
 {
-	int forward, reverse;
+	int forward, reverse, tmp;
 
-	for (forward = 0; a[forward] != '\0'; j++)
+	for (forward = 0; forward < n; forward++)
 	{
 	}
 
-	reverse = forward - 1;
+	reverse = n - 1;
+	forward = 0;
 
-	for (reverse < n && reverse >= a[forward]; reverse--)
+	while (reverse > forward)
 	{
-		_putchar(a[reverse]);
+		tmp = a[forward];
+		a[forward] = a[reverse];
+		a[reverse] = tmp;
+		forward++;
+		reverse--;
+
 	}
 }
