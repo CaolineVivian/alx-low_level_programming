@@ -5,7 +5,7 @@
  * @s: points to string
  * @accept: set of bytes being searched for
  *
- * Return:Q s or '\0'
+ * Return: s or '\0'
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -15,7 +15,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (index = 0; accept[index]; index++)
 		{
-			if (*s == accept[accept])
+			if (*s == accept[index])
 			{
 				return (s);
 			}
