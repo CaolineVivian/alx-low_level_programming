@@ -13,7 +13,7 @@ char *_memset(char *s, char b, unsigned int n)
 	/* index variable that loops over memory byte-to-byte*/
 	unsigned int i;
 	/* pointer to memory s*/
-	unsigned char *memory = s, valu = b;
+	unsigned char *memory = s, value = b;
 
 	for (i = 0; i < n; i++)
 	{
