@@ -13,18 +13,16 @@ char *_string(char *haystack, char *needle)
 
 	while (*haystack)
 	{
-		for (index = 0; needle[index]; index++)
+		index = 0;
+
+		if (haystack[index] == needle[index])
 		{
-			if (*haystack == needle[index])
-			{
-				return (needle[index]);
-			}
-			else
-			{
-				return ('\0');
-			}
+			do {
+				if (needle[index + 1] == '\0')
+					return (haystack);
+			} while (haystack[index] == needle[index]);
 		}
 		haystack++
 	}
-	return (needle[index]);
+	return ('\0');
 }
