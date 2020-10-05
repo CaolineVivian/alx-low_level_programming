@@ -9,21 +9,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int index, c;
+	int index, byte;
 
-	for (c = 0; s[c] != '\0'; c++)
+	while (*s)
 	{
 		for (index = 0; accept[index] != '\0'; index++)
 		{
-			if (s[c] == accept[index])
+			if (*s == accept[index])
 			{
+				byte++;
 				break;
 			}
 			else if (accept[index + 1] == '\0')
 			{
-				return (c);
+				return (byte);
 			}
 		}
+		s++
 	}
-	return (c);
+	return (byte);
 }
