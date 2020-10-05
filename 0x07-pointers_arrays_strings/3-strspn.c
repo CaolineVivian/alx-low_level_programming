@@ -10,14 +10,15 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int index;
-	unsigned int c;
+	unsigned int c = 0;
 
-	for (c = 0; s[c] != '\0'; c++)
+	while (*s)
 	{
 		for (index = 0; accept[index]; index++)
 		{
-			if (s[c] == accept[index])
+			if (*s == accept[index])
 			{
+				c++;
 				break;
 			}
 			else if (accept[index + 1] == '\0')
@@ -25,6 +26,7 @@ unsigned int _strspn(char *s, char *accept)
 				return (c);
 			}
 		}
+		s++;
 	}
 	return (c);
 }
