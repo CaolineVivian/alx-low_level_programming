@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int first, second, mul;
-	
+
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -22,9 +22,7 @@ int main(int argc, char *argv[])
 		first = atoi(argv[1]);
 		second = atoi(argv[2]);
 		mul = first * second;
-		
 		printf("%d\n", mul);
-
 	}
 	return (0);
 }
