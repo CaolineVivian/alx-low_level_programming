@@ -7,7 +7,7 @@
  *
  * Return: 0 on succes
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int count;
 
