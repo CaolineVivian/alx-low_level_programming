@@ -3,6 +3,11 @@
 
 /**
  * main -  program that adds positive numbers.
+ * @argc: counts the command line arguments
+ * @argv: pointer to argc
+ *
+ * Return: 1 if number contains symbols that are not digits,
+ * 0 if no number is passed
  */
 int main(int argc, char *argv[])
 {
