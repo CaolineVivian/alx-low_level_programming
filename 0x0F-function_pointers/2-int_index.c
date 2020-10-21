@@ -2,9 +2,9 @@
 
 /**
  * int_index - function that searches for an integer
- * @array - array pointer
- * @size - limiter
- * @cmp - function pointer
+ * @array: array pointer
+ * @size: limiter
+ * @cmp: function pointer
  *
  * Return: index
  */
