@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
+
 /**
  * print_strings -  function that prints strings, followed by a new line
  * @separator: indefinite number of string pointers parameters
@@ -28,13 +27,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("%s", ptr);
 		}
-		
 		if (i != (n - 1)  && separator != NULL)
 		{
 			printf("%s", separator);
 		}
 
 	}
-	va_end(str);
 	printf("\n");
+	va_end(str);
 }
